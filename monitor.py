@@ -7,7 +7,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-send_telegram_message("Test from GitHub Actions 🚀")
 
 TARGET_URL = os.environ.get("TARGET_URL")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -26,6 +25,10 @@ def send_telegram_message(message):
         print("Telegram notification sent successfully.")
     except Exception as e:
         print(f"Error sending telegram message: {e}")
+
+
+send_telegram_message("Test from GitHub Actions 🚀")
+
 
 def check_stock():
     chrome_options = Options()
