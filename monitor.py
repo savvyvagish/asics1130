@@ -27,9 +27,6 @@ def send_telegram_message(message):
         print(f"Error sending telegram message: {e}")
 
 
-send_telegram_message("Test from GitHub Actions 🚀")
-
-
 def check_stock():
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")
